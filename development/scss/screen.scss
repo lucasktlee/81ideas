@@ -1,0 +1,141 @@
+/*
+    ========================================
+    STYLESHEET FOR 81IDEAS.COM
+    Date:       2016/08/08
+    Version:    1.0.0
+    Author:     Lucas K.T. Lee
+    ========================================
+*/
+@import "_normalize";
+
+@import "_variables";
+@import "_mixins";
+
+html {
+    font-size: $fs-base;
+}
+
+body {
+    background-color: $c-c1;
+    color: $c-w;
+    font-family: "Gotham A", "Gotham B", sans-serif;
+    @include hyphenate("auto");
+    line-height: $lh-s;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: ($fs-s5 * 3);                //  48px
+    font-style: normal;
+    font-weight: $fw-book;
+    letter-spacing: ($hs-s * 3/14);         //  3px
+    line-height: ($lh-s * 2.5);             //  53px
+    margin: ($lh-s * 3) 0;
+    padding: 0;
+    text-shadow: 0.1rem 0.1rem 0 $c-b;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: $fs-s4;
+    font-weight: $fw-light;
+    letter-spacing: ($hs-s * 1/14);
+}
+
+span {
+    color: $c-a1;
+}
+
+.accessibility {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 100.0rem; 	/* 1000px */
+	width: 100%;
+	/* clearfix */
+	@include clearfix();
+}
+
+.c-12 {
+	margin-left: $hs-s;
+	margin-right: $hs-s;
+	vertical-align: top;
+	zoom: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*  MEDIUM SIZED DEVICE STYLES
+    ----------------------------------------    */
+@media all and (min-width: $bp-m-min) and (max-width: $bp-m-max) {
+    h1 {
+        font-size: ($fs-m1 * 5);            //  60px
+        letter-spacing: ($hs-m * 1/5);      //  5px
+        line-height: ($lh-m * 3);           //  75px
+        margin: ($lh-m * 3) 0;
+    }
+    p {
+        font-size: $fs-m4;
+        letter-spacing: ($hs-m * 2/25);
+    }
+    .container {
+		max-width: 77.7rem;
+		min-width: 56.9rem;
+	}
+    .c-12 {
+        float: left;
+		margin-left: $hs-m;
+		margin-right: 0;
+        width: 94.5946%;
+    }
+}
+
+
+/*  LARGE SIZED DEVICE STYLES
+    ----------------------------------------    */
+@media all and (min-width: $bp-l-min) {
+    h1 {
+        font-size: ($fs-l7 * 2);            //  72px
+        letter-spacing: ($hs-l * 2/7);      //  8px
+        line-height: ($lh-l * 3);           //  84px
+        margin: ($lh-l * 3) 0;
+    }
+    p {
+        font-size: $fs-l4;
+        letter-spacing: ($hs-l * 3/28);
+    }
+    .container {
+		max-width: 92.5rem;
+		min-width: 77.8rem;
+	}
+    .c-12 {
+        float: left;
+		margin-left: $hs-l;
+		margin-right: 0;
+        width: 94.5946%;
+    }
+}

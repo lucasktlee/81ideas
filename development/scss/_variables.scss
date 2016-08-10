@@ -1,0 +1,100 @@
+/*	FONT SIZES
+    ----------------------------------------    */
+/* 	base font size */
+$fs-base:	62.5%;					//	10px
+
+/*	font sizes for small devices  */
+$fs-s1:		1.0rem;					//	10px
+$fs-s2:		1.2rem;					//	12px
+$fs-s3:		1.4rem;					//	14px
+$fs-s4:		1.6rem;					//	16px
+$fs-s5:		1.8rem;					//	18px
+$fs-s6:		2.1rem;					//	21px
+$fs-s7:		2.4rem;					//	24px
+$fs-s8:		2.8rem;					//	28px
+$fs-s9:		3.6rem;					//	36px
+
+/*	font sizes for medium devices */
+$fs-m1:		1.2rem;					//	12px
+$fs-m2:		1.4rem;					//	14px
+$fs-m3:		1.6rem;					//	16px
+$fs-m4:		1.8rem;					//	18px
+$fs-m5:		2.1rem;					//	21px
+$fs-m6:		2.4rem;					//	24px
+$fs-m7:		2.8rem;					//	28px
+$fs-m8:		3.6rem;					//	36px
+$fs-m9:		4.2rem;					//	42px
+
+/*	font sizes for large devices */
+$fs-l1:		1.4rem;					//	14px
+$fs-l2:		1.6rem;					//	16px
+$fs-l3:		1.8rem;					//	18px
+$fs-l4:		2.1rem;					//	21px
+$fs-l5:		2.4rem;					//	24px
+$fs-l6:		2.8rem;					//	28px
+$fs-l7:		3.6rem;					//	36px
+$fs-l8:		4.2rem;					//	42px
+$fs-l9:		4.8rem;					//	48px
+
+
+/*	FONT WEIGHTS
+    ----------------------------------------    */
+$fw-light:	300;
+$fw-book:	400;
+$fw-medium: 500;
+$fw-bold:	700;
+
+
+/*	COLORS
+	----------------------------------------	*/
+$c-b:		rgb(0,0,0);				//	#000000		black
+$c-w:		rgb(255,255,255);		//	#ffffff		white
+
+/*	greys */
+$c-g1:		rgb(34,34,34);			//	#222222		darkest grey
+$c-g2:		rgb(68,68,68);			//	#444444		dark grey
+$c-g3:		rgb(102,102,102);		//	#666666		medium grey
+$c-g4:		rgb(153,153,153);		//	#999999		light grey
+$c-g5:		rgb(221,221,221);		//	#dddddd		lighest grey
+
+/*  site specific color scheme */
+$c-a1:      rgb(217,179,29);        //  #d9b31d     gold leaf
+$c-b1:      rgb(29,39,49);          //  #1d2731     ivory black
+$c-c1:      rgb(8,61,93);           //  #083d5d     prussian blue
+$c-c2:      rgb(50,140,193);        //  #328cc1     sky blue
+
+/*  LINE HEIGHTS AND HORIZONTAL SPACING
+    ----------------------------------------    */
+$hs-l:		2.8rem;					//	28px
+$hs-m:		2.5rem;					//	25px
+$hs-s:		1.4rem;					//	14px
+
+$lh-l:		2.8rem;					//	28px
+$lh-m:		2.5rem;					//	25px
+$lh-s:		2.1rem;					//	21px
+
+
+/*  MEDIA QUERY BREAKPOINTS
+    ----------------------------------------    */
+/*
+	Viewport sizes for small devices (mobile phones):
+	-	iPhone 4 & below:			 320px (portrait)
+									 480px (landscape)
+	-	iPhone 5:					 320px (portrait)
+									 568px (landscape)
+	-	iPhone 6:					 375px (portrait)
+									 667px (landscape)
+	-	iPhone 6 Plus:				 414px (portrait)
+									 736px (landscape)
+
+	Viewport sizes for medium devices (tablets & smaller laptops):
+	-	iPad:						 768px (protrait)
+									1024px (landscape)
+*/
+$bp-l-min: 	56.3125em;				// 901px
+
+$bp-m-max:	56.2500em;				// 900px
+$bp-m-min:	35.5625em;				// 569px
+
+$bp-s-max:	35.5000em;				// 568px
+$bp-s-min:	25.0625em;				// 401px
